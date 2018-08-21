@@ -1,0 +1,87 @@
+.more {
+	display: block;
+}
+.more__icon {
+	height: 60px;
+	position: relative;
+	margin-bottom: 0px;
+}
+.more__icon::before,
+.more__icon::after {
+	background-color: #d3d3d3;
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	left: 50%;
+	top: 32%;
+	content: "";
+	margin-left: -15px;
+}
+.more__icon::after {
+	transform: rotate(90deg);
+}
+.more__main-text {
+	display: block;
+	font-family: @font-family-brand-regular;
+	font-size: 16px;
+	line-height: 20px;
+	color: @color-base;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 8px;
+}
+.more__second-text {
+	display: block;
+	font-family: @font-family-simple-text;
+	font-size: 12px;
+	line-height: 16px;
+	color: @color-simple-text;
+	text-align: center;
+	margin-bottom: 18px;
+}
+.more__btn {
+	width: 280px;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+}
+@media (min-width: @tablet-min-width) {
+.more {
+	display: block;
+}
+.more__icon {
+	height: 267px;
+	margin-bottom: 20px;
+}
+.more__icon::before,
+.more__icon::after {
+	width: 60px;
+	top: 207px;
+	margin-left: -30px;
+}
+.more__main-text {
+	width: 170px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.more__second-text {
+	width: 170px;
+	font-size: 16px;
+	margin: 0 auto;
+	margin-bottom: 87px;
+}
+.more__btn {
+	padding: 10px 0;
+}
+}
+@media (min-width: @tablet-min-width) and (max-width: @tablet-max-width) {
+.more__btn {
+	width: 250px;
+}
+}
+@media (min-width: @desktop-width) {
+.more__btn {
+	width: 169px;
+}
+}

@@ -1,0 +1,140 @@
+.example {
+	padding: 0 @padding-lateral-edge-mobile;
+	margin-bottom: 60px;
+}
+.example_title {
+	margin-bottom: 22px;
+}
+.example__content {
+	margin-bottom: 25px;
+}
+.example__total {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+.examle__cell {
+	display: inline-block;
+	vertical-align: middle;
+	min-width: 122px;
+	position: relative;
+	text-align: center;
+	padding: 15px 0;
+	border: 1px solid #cdcdcd;
+	margin: 0;
+}
+.examle__cell--indent {
+	margin-left: 30px;
+}
+.example__value {
+	font-family: @font-family-brand-regular;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 24px;
+	color: @color-base;
+	text-transform: uppercase;
+}
+.example__below {
+	background-color: #fff;
+	width: 60px;
+	position: absolute;
+	bottom: -12px;
+	left: 50%;
+	font-family: @font-family-simple-text;
+	font-size: 12px;
+	line-height: 12px;
+	color: #444;
+	text-align: center;
+	margin-left: -30px;
+}
+.example__cost {
+	font-family: @font-family-brand-regular;
+	font-size: 14px;
+	line-height: 20px;
+	color: @color-base;
+	text-transform: uppercase;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+.example__cost b {
+	font-weight: normal;
+}
+@media (min-width: @tablet-min-width) {
+.example__total {
+	justify-content: flex-start;
+}
+.examle__cell {
+	min-width: 162px;
+}
+.examle__cell--indent {
+	margin-left: 40px;
+	margin-right: auto;
+}
+.example__value {
+	font-size: 30px;
+	line-height: 37px;
+}
+.example__below {
+	width: 140px;
+	bottom: -7px;
+	font-size: 14px;
+	line-height: 14px;
+	margin-left: -70px;
+}
+.example__cost {
+	text-align: right;
+	font-size: 20px;
+	line-height: 28px;
+	margin: 0;
+}
+}
+@media (min-width: @tablet-min-width) and (max-width: @tablet-max-width) {
+.example {
+	padding: 0 @padding-lateral-edge-tablet;
+	margin-bottom: 135px;
+}
+.example_title {
+	margin-top: 15px;
+	margin-bottom: 65px;
+}
+.example__content {
+	margin-bottom: 52px;
+}
+.example__total {
+	align-items: center;
+	margin-bottom: 90px;
+}
+.examle__cell {
+	min-width: 162px;
+}
+.example__cost {
+	width: 180px;
+}
+}
+@media (min-width: @desktop-width) {
+.example {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 @padding-lateral-edge-desktop;
+	margin-left: 40px;
+	margin-bottom: 10px;
+	margin-right: 40px;
+}
+.example_main {
+	width: 435px;
+}
+.example_title {
+	margin-top: 55px;
+	margin-bottom: 145px;
+}
+.example__content {
+	margin-bottom: 68px;
+}
+.example__cost {
+	margin-top: 58px;
+}
+.example__cost b{
+	margin-left: 65px;
+}
+}

@@ -1,0 +1,124 @@
+.main-nav {
+  position: relative;
+  padding: 0 @padding-lateral-edge-mobile;
+}
+.main-nav__toggle {
+  display: block;
+  background-color: #fff;
+  width: 54px;
+  height: 44px;
+  position: absolute;
+  top: -55px;
+  right: 5px;
+  border: none;
+  cursor: pointer;
+}
+.main-nav--closed .main-nav__toggle::before {
+  background-color: @color-base;
+  width: 24px;
+  height: 2px;
+  position: absolute;
+  top: 13px;
+  right: 14px;
+  content: "";
+  box-shadow: 0 8px 0 0 @color-base, 0 16px 0 0 @color-base;
+}
+.main-nav--opened .main-nav__toggle::before,
+.main-nav--opened .main-nav__toggle::after {
+  background-color: @color-base;
+  width: 27px;
+  height: 2px;
+  position: absolute;
+  right: 14px;
+  content: "";
+  transform: rotate(45deg);
+}
+.main-nav--opened .main-nav__toggle::after {
+  transform: rotate(-45deg);
+}
+.main-nav__toggle:focus::before,
+.main-nav__toggle:focus::after {
+
+}
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+}
+.main-nav__item {
+  list-style: none;
+  text-align: center;
+}
+.main-nav__link {
+  display: inline-block;
+  font-family: @font-family-brand-medium;
+  font-size: 20px;
+  line-height: 20px;
+  color: @color-base;
+  text-transform: uppercase;
+  padding: 23px 0;
+}
+.main-nav--closed .main-nav__list {
+  display: none;
+}
+@media (min-width: @tablet-min-width){
+.main-nav {
+  position: relative;
+  padding: 0;
+}
+.main-nav__toggle {
+  display: none;
+}
+.main-nav__item {
+  display: inline;
+}
+.main-nav--closed .main-nav__list,
+.main-nav__list {
+  display: block;
+}
+.main-nav__link {
+  font-family: @font-family-brand-regular;
+  line-height: 24px;
+  padding: 10px 0;
+  margin-left: 30px;
+}
+.main-nav__link--active {
+  border-bottom: 2px solid @color-brand;
+  cursor: default;
+}
+.main-nav__link--active:hover,
+.main-nav__link--active:active {
+  color: @color-base;
+}
+}
+@media (min-width: @tablet-min-width) and (max-width: @tablet-max-width) {
+.main-nav {
+  margin-top: 31px;
+}
+.main-nav__link {
+  font-size: 18px;
+}
+}
+@media (min-width: @desktop-width) {
+.main-nav {
+  margin-top: 62px;
+}
+.main-nav__link {
+  font-size: 20px;
+}
+.page-header--index .main-nav__link {
+  color: #fff;
+}
+.page-header--index .main-nav__link:hover {
+  color: rgba(255,255,255,.7);
+}
+.page-header--index .main-nav__link:active {
+  color: rgba(255,255,255,.3);
+}
+.page-header--index .main-nav__link--active:hover,
+.page-header--index .main-nav__link--active:active {
+  color: #fff;
+}
+.page-header--index .main-nav__link--active {
+  border-bottom: 2px solid #fff;
+}
+}

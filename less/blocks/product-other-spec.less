@@ -1,0 +1,29 @@
+.product-other-spec {
+	display: flex;
+	justify-content: space-between;
+	margin: 14px 0;
+}
+.product-other-spec__name,
+.product-other-spec__value {
+	font-family: @font-family-simple-text;
+	font-size: 14px;
+	line-height: 14px;
+}
+@media (min-width: @tablet-min-width) and (max-width: @tablet-max-width) {
+.product-other-spec {
+	margin: 0;
+}
+.product-other-spec__name {
+	margin-right: 14px;
+}
+.product-other-spec__name,
+.product-other-spec__value {
+	font-size: 16px;
+	line-height: 20px;
+}
+}
+@media (min-width: @desktop-width) {
+.product-other-spec__name {
+	width: 205px;
+}
+}

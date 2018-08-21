@@ -1,0 +1,127 @@
+.catalog {
+	padding: 0 @padding-lateral-edge-mobile;
+}
+.catalog_title {
+	margin: 0;
+}
+.catalog__list {
+	margin: 50px 0 52px;
+	padding: 0;
+}
+.catalog__item {
+	max-width: 280px;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 46px auto;
+}
+.catalog__img-wrapper {
+	width: 130px;
+	height: 110px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+	margin-bottom: 13px;
+}
+.catalog__img {
+	width: 80px;
+}
+.catalog__img--min {
+	width: 68px;
+}
+.catalog__feature {
+	flex: 1;
+	margin-bottom: 13px;
+}
+.catalog__item h3 {
+	width: 80px;
+	font-family: @font-family-brand-regular;
+	font-size: 16px;
+	line-height: 20px;
+	color: @color-base;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 0;
+	margin-bottom: 15px;
+}
+.catalog__btn {
+	width: 280px;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	padding: 10px 0;
+}
+@media (min-width: @tablet-min-width) {
+.catalog__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 12px;
+	margin-bottom: 78px;
+}
+.catalog__item {
+	display: flex;
+	flex-direction: column;
+}
+.catalog__img-wrapper {
+	height: 276px;
+}
+.catalog__img {
+	width: 160px;
+}
+.catalog__img--min {
+	width: 130px;
+	margin-top: 40px;
+}
+.catalog__item h3 {
+	width: 130px;
+	font-size: 20px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.catalog__feature {
+	flex: auto;
+	margin-bottom: 20px;
+}
+.catalog__btn {
+	padding: 9px 0;
+}
+}
+@media (min-width: @tablet-min-width) and (max-width: @tablet-max-width) {
+.catalog {
+	padding: 0 @padding-lateral-edge-tablet;
+}
+.catalog__img-wrapper {
+	width: 246px;
+}
+.catalog__item {
+	width: 250px;
+	padding: 0 35px;
+	margin: 28px 0;
+}
+.catalog__btn {
+	width: 250px;
+}
+}
+@media (min-width: @desktop-width) {
+.catalog {
+	padding: 0 @padding-lateral-edge-desktop;
+	margin-left: 40px;
+	margin-bottom: 85px;
+	margin-right: 40px;
+}
+.catalog__img-wrapper {
+	width: 169px;
+	margin-bottom: 7px;
+}
+.catalog__item {
+	width: 169px;
+	padding: 0 38px;
+	margin: 30px 0;
+}
+.catalog__btn {
+	width: 169px;
+}
+}

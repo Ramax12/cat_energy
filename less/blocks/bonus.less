@@ -1,0 +1,45 @@
+.bonus {
+	background-image: url("../img/gift-photo.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.bonus svg {
+	display: block;
+	fill: #fff;
+	padding: 63px 0;
+	margin: 0 auto;
+}
+.bonus__text {
+	display: block;
+	width: 165px;
+	font-family: @font-family-simple-text;
+	font-size: 16px;
+	line-height: 20px;
+	color: #fff;
+	text-align: center;
+	padding-bottom: 44px;
+	margin: 0 auto;
+}
+@media (min-width: @tablet-min-width) and (max-width: @tablet-max-width) {
+.bonus {
+	background-position: 0 60%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 6px 90px;
+}
+.bonus svg {
+	margin: 0;
+}
+.bonus__text {
+	text-align: left;
+	padding-bottom: 0;
+	margin: 5px 30px 0 0;
+}
+}
+@media (min-width: @desktop-width) {
+	.bonus {
+		width: 245px;
+		height: 288px;
+	}
+}

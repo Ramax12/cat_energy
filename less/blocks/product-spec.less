@@ -1,0 +1,26 @@
+.product-spec {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+}
+.product-spec__name,
+.product-spec__value {
+	display: inline-block;
+	font-family: @font-family-simple-text;
+	font-size: 12px;
+	line-height: 16px;
+	margin: 0;
+}
+@media (min-width: @tablet-min-width) {
+.product-spec-wrapper {
+	margin-bottom: 15px;
+}
+.product-spec {
+	padding: 7px 0;
+	border-bottom: 1px solid #cdcdcd;
+}
+.product-spec__name,
+.product-spec__value {
+	font-size: 16px;
+}
+}

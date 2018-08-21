@@ -1,0 +1,175 @@
+.page-header {
+	margin-bottom: 15px;
+}
+.page-header__logo {
+	background-image: url("../img/logo-mobile.svg");
+	background-repeat: no-repeat;
+	height: 38px;
+	line-height: 38px;
+	display: inline-block;
+	padding-left: 37px;
+	margin: 12px 0 15px @padding-lateral-edge-mobile;
+}
+.page-header__logo:hover,
+.page-header__logo:focus {
+	opacity: .9;
+}
+.page-header__logo:active {
+	opacity: .7;
+}
+.page-header__logo p {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 22px;
+	margin: 0;
+	margin-left: 52px;
+}
+.page-header__bottom-block {
+	background-image: url('../img/green-cat.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 0;
+	min-height: 305px;
+	position: relative;
+	padding: 30px;
+	margin-bottom: 135px;
+	box-sizing: border-box;
+}
+.page-header__title {
+	font-family: @font-family-brand-regular;
+	font-size: 36px;
+	line-height: 36px;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 24px;
+}
+.page-header__subtitle {
+	font-family: @font-family-brand-regular;
+	font-size: 14px;
+	line-height: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+.page-header img {
+	width: 280px;
+	height: 271px;
+	position: absolute;
+	bottom: -130px;
+	left: 50%;
+	margin-left: -135px;
+}
+.page-header__btn {
+	display: block;
+	width: 280px;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	margin: 0 auto;
+}
+@media (min-width: @tablet-min-width){
+.page-header__top-block {
+	display: flex;
+	justify-content: space-between;
+}
+.page-header__bottom-block {
+	background-image: none;
+}
+.page-header__title {
+	width: 427px;
+	font-size: 60px;
+	line-height: 60px;
+	color: @color-base;
+	font-weight: normal;
+	text-align: left;
+	margin-bottom: 40px;
+}
+.page-header__subtitle {
+	font-size: 20px;
+	line-height: 20px;
+	color: @color-base;
+	text-align: left;
+}
+.page-header__btn {
+	width: auto;
+	position: relative;
+	display: inline-block;
+	font-size: 20px;
+	line-height: 20px;
+	padding: 16px 28px;
+	margin: 0;
+}
+}
+@media (min-width: @tablet-min-width) and (max-width: @tablet-max-width) {
+.page-header {
+	padding: 0 @padding-lateral-edge-tablet;
+	margin-bottom: 45px;
+}
+.page-header--index {
+	margin-bottom: 525px;
+}
+.page-header__logo {
+	background-image: url("../img/logo-tablet.svg");
+	height: 57px;
+	line-height: 57px;
+	margin: 24px 0 15px;
+}
+.page-header__logo p {
+	font-size: 19px;
+}
+.page-header__bottom-block {
+	min-height: auto;
+	padding: 44px 0 0 88px;
+	margin-bottom: 48px;
+}
+.page-header img {
+	width: 710px;
+	height: 610px;
+	bottom: -635px;
+	left: 50%;
+	z-index: 0;
+	margin-left: -355px;
+}
+.page-header__btn {
+	z-index: 1;
+	margin-left: 88px;
+}
+}
+@media (min-width: @desktop-width) {
+.page-header {
+	padding: 0 110px;
+	margin-bottom: 60px;
+}
+.page-header--index {
+	background-image: url('../img/green-cat.jpg');
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	background-size: 50%;
+	min-height: 503px;
+	margin-bottom: 235px;
+}
+.page-header__logo {
+	background-image: url("../img/logo-desktop.svg");
+	height: 60px;
+	line-height: 60px;
+	margin: 55px 0 15px;
+}
+.page-header__logo p {
+	font-size: 25px;
+	margin-left: 48px;
+}
+.page-header__bottom-block {
+	padding: 92px 0 0 80px;
+	margin-bottom: 20px;
+}
+.page-header img {
+	width: 552px;
+	height: 499px;
+	bottom: -200px;
+	left: 48%;
+}
+.page-header__btn {
+	margin-left: 80px;
+}
+}

@@ -930,7 +930,6 @@ a:active {
 }
 .form__extra + label {
   width: 280px;
-  margin-right: 100px;
   margin-bottom: 12px;
 }
 .form__extra + label:active {
@@ -969,6 +968,7 @@ a:active {
   line-height: 16px;
   color: #111;
   margin-left: 60px;
+  white-space: nowrap;
 }
 @media (min-width: 768px) {
   .title {
